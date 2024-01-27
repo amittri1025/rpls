@@ -88,6 +88,24 @@ p {
   height: 100%;
 }
 
+::-webkit-input-placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important;
+}
+
+:-ms-input-placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important;
+}
+
+::-ms-input-placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important;
+}
+
 ::placeholder {
   color: #747f8a !important;
   font-size: 13px;
@@ -264,37 +282,41 @@ body {
 .btn-success:focus {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .btn-primary {
-  background-color: #044981;
-  border-color: #044981;
+  background-color: #032fa7;
+  border-color: #032fa7;
 }
 
 .btn-primary:hover {
-  background-color: #044981 !important;
-  border-color: #044981 !important;
+  background-color: #032fa7 !important;
+  border-color: #032fa7 !important;
 }
 
 .btn-primary:active {
-  background-color: #044981 !important;
-  border-color: #044981 !important;
+  background-color: #032fa7 !important;
+  border-color: #032fa7 !important;
 }
 
 .btn-primary:focus {
-  background-color: #044981 !important;
-  border-color: #044981 !important;
-  box-shadow: none !important;
+  background-color: #032fa7 !important;
+  border-color: #032fa7 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .btn {
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
 }
 
 .form-control:focus {
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   border: 1px solid #CCC;
 }
 
@@ -308,7 +330,8 @@ body {
 }
 
 .form-control:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 1px solid #CCC;
 }
 
@@ -334,7 +357,8 @@ body {
 
 /* =================== Header Style Starts Here =================== */
 header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: #FFF;
   width: 100%;
   z-index: 99;
@@ -461,7 +485,7 @@ header .nav-col .navbad li a {
 }
 
 header .nav-col .navbad li a:hover {
-  background-color: #044981;
+  background-color: #032fa7;
   color: #fff !important;
 }
 
@@ -498,7 +522,8 @@ header .small-menu {
 
 .scroll-to-fixed-fixed {
   background-color: #FFF;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .scroll-to-fixed-fixed {
@@ -557,6 +582,7 @@ header .small-menu {
 }
 
 .slider-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 32, 44, 0.3)), to(rgba(45, 32, 44, 0.1)));
   background: linear-gradient(to bottom, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
   position: relative;
@@ -673,7 +699,8 @@ header .small-menu {
 .about-us .image-part .about-quick-box .about-qcard {
   padding: 50px 30px;
   background-color: #FFF;
-  box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+          box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
   border-radius: 15px;
   text-align: center;
   margin-bottom: 30px;
@@ -820,7 +847,8 @@ header .small-menu {
 .our-blog .single-blog {
   margin-bottom: 20px;
   background-color: #FFF;
-  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+  -webkit-box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+          box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
 }
 
 .our-blog .single-blog figure {
@@ -946,7 +974,8 @@ header .small-menu {
 }
 
 .kf-2 .single-key {
-  box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+          box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
 }
 
 /* ===================================== Our Team Starts Here ===================================== */
@@ -966,7 +995,8 @@ header .small-menu {
 }
 
 .our-team .team-row .single-usr {
-  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+  -webkit-box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+          box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
   margin-bottom: 20px;
 }
 
@@ -976,7 +1006,7 @@ header .small-menu {
 
 .our-team .team-row .single-usr .det-o {
   padding: 20px;
-  background-color: #044981;
+  background-color: #032fa7;
 }
 
 .our-team .team-row .single-usr .det-o h4 {
@@ -1048,29 +1078,29 @@ header .small-menu {
   width: 7.5%;
   left: 46.5%;
   height: 45px;
-  border-bottom: 1px solid #044981;
+  border-bottom: 1px solid #032fa7;
 }
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #044981;
+  border: 1px solid #032fa7;
   border-radius: 5px;
   text-align: center;
-  color: #044981;
+  color: #032fa7;
   margin-bottom: 30px;
 }
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #044981;
+  border: 1px solid #032fa7;
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #044981;
+  background-color: #032fa7;
 }
 
 .btn-default:active .filter-button:active {
-  background-color: #044981;
+  background-color: #032fa7;
   color: white;
 }
 
@@ -1081,3 +1111,4 @@ header .small-menu {
 .gallery_product {
   margin-bottom: 30px;
 }
+/*# sourceMappingURL=style.css.map */
