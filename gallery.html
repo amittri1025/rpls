@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Free Tour Package Website Tempalte | Smarteyeapps.com</title>
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <title>Gallery | RES PUBLICAN LAW SOCIETY (REGD.)</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/fav.jpg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -14,99 +14,252 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <style>
+        .gallery {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+            grid-auto-rows: 250px;
+            grid-auto-flow: dense;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .gallery-wrapper {
+                grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+                grid-auto-rows: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .gallery-wrapper {
+                grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+                grid-auto-rows: 175;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .gallery-wrapper {
+                grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+                grid-auto-rows: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 550px) {
+            .gallery-wrapper {
+                grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+                grid-auto-rows: 150px;
+            }
+
+            .gallery-wrapper .wide {
+                grid-column: span 2 !important;
+            }
+
+            .gallery-wrapper .xl-wide {
+                grid-column: span 2 !important;
+            }
+
+            .gallery-wrapper .tall {
+                grid-row: span 2 !important;
+            }
+
+            .gallery-wrapper .big {
+                grid-column: span 2 !important;
+                grid-row: span 2 !important;
+            }
+
+            .gallery-wrapper .xl-big {
+                grid-column: span 2 !important;
+                grid-row: span 2 !important;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .gallery-wrapper {
+                grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+                grid-auto-rows: 100px;
+            }
+        }
+
+        .gallery-wrapper>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            transition: 0.25s all;
+        }
+
+        .gallery-wrapper>div:hover {
+            padding: 4px;
+            transition: 0.25s all;
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+
+        .gallery-wrapper>div>img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .gallery-wrapper .wide {
+            grid-column: span 2;
+        }
+
+        .gallery-wrapper .xl-wide {
+            grid-column: span 3;
+        }
+
+        .gallery-wrapper .tall {
+            grid-row: span 2;
+        }
+
+        .gallery-wrapper .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-wrapper .xl-big {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            border: 2px solid white;
+            border-radius: 16px;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="continer-fluid ">
-    <div  class="header-top">
-        <div class="container">
-            <div class="row col-det">
-                <div class="col-lg-6 d-none d-lg-block">
-                    <ul class="ulleft">
-                        <li>
-                            <i class="far fa-envelope"></i>
-                            sales@smarteyeapps.com
-                            <span>|</span></li>
-                        <li>
-                            <i class="fas fa-phone-volume"></i>
-                            +876 987 666 5433</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 folouws">
-                  
-                    <ul class="ulright">
-                       <li> <small>Folow Us </small>:</li>
-                        <li>
-                            <i class="fab fa-facebook-square"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-twitter-square"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-instagram"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-linkedin"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
-                    <button class="btn btn-sm btn-success">Join Us</button>
-                    <button class="btn btn-sm btn-default">Donate</button>
+
+    <header class="continer-fluid ">
+        <div class="header-top">
+            <div class="container">
+                <div class="row col-det">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <ul class="ulleft">
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                rplsindia@gmail.com
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-volume"></i>
+                                Phone : 011 23070303
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 folouws">
+
+                        <ul class="ulright">
+                            <li> <small>Follow Us </small>:</li>
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/p/Res-Publican-Law-Society-100064026733840/?paipv=0&eav=AfY7ItvKzG_nxlYtpj2xttonnUan3Kx_dOepE1JOFB_NyeNwxW39BV5Az9kSrM3zqdU&_rdr">
+
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="menu-jk" class="header-bottom">
-        <div class="container">
-            <div class="row nav-row">
-                <div class="col-lg-3 col-md-12 logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo.jpg" alt="">
-                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
-                    </a>
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.jpg" alt="">
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                        </a>
 
-                </div>
-                <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
 
-                            <ul class="navbad">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about_us.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="services.html">Services</a>
-                                </li>
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" href="#">About Us</a> -->
+                                <a class="nav-link" href="about_us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Donate</a>
+                                <!-- <a class="nav-link" href="services.html">Services</a> -->
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                                <!-- <a class="nav-link" href="gallery.html">Gallery</a> -->
+                            </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact_us.html">Contact US</a>
-                                </li>
-
-
-
-
-                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                                <!-- <a class="nav-link" href="contact_us.html">Contact US</a> -->
+                            </li>
 
 
+
+
+                        </ul>
+
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
-</header>
- 
-  <!--  ************************* Page Title Starts Here ************************** -->
-        
+    </header>
+
+    <!--  ************************* Page Title Starts Here ************************** -->
+
     <div class="page-nav no-margin row">
         <div class="container">
             <div class="row">
@@ -118,143 +271,151 @@
             </div>
         </div>
     </div>
-    
-    
-   
- <!--  ************************* Gallery Starts Here ************************** -->
-        <div id="portfolio" class="gallery">    
-           <div class="container">
-              
-              <div class="row">
-                
 
-        <div class="gallery-filter d-none d-sm-block">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Finance</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Digital Marketing</button>
-            <button class="btn btn-default filter-button" data-filter="spray"> Money</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Business Alaysis</button>
+
+
+    <!--  ************************* Gallery Starts Here ************************** -->
+    < <div id="image-modal" class="image-modal">
+        <span class="close" id="close-modal">&times;</span>
+        <div class="modal-container">
+            <img class="modal-content" id="modal-image" />
         </div>
-        <br/>
-
-
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="assets/images/events/image_02.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_03.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_04.jpg" class="img-responsive">
-            </div>
-
-          
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_05.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_06.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_07.jpg" class="img-responsive">
-            </div>
-
-            
         </div>
-    </div>
-       
-       
-       </div>
-        <!-- ######## Gallery End ####### -->    
-  
-                 
-  <!--  ************************* Footer Starts Here ************************** -->
-          
-      <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <h2>About Us</h2>
-                    <p>
-                        Smart Eye is a leading provider of information technology, consulting, and business process services. Our dedicated employees offer strategic insights, technological expertise and industry experience.
-                    </p>
-                    <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global... </p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <h2>Useful Links</h2>
-                    <ul class="list-unstyled link-list">
-                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-12 map-img">
-                    <h2>Contact Us</h2>
-                    <address class="md-margin-bottom-40">
-                        BlueDart <br>
-                        Marthandam (K.K District) <br>
-                        Tamil Nadu, IND <br>
-                        Phone: +91 9159669599 <br>
-                        Email: <a href="mailto:info@anybiz.com" class="">info@bluedart.in</a><br>
-                        Web: <a href="smart-eye.html" class="">www.bluedart.in</a>
-                    </address>
 
+        <div class="gallery">
+            <div class="gallery-wrapper">
+                <div class="tall">
+                    <img src="assets/images/gallery/event1.jpg" />
+                </div>
+                <div class="wide">
+                    <img src="assets/images/gallery/2.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/3.jpg" />
+                </div>
+                <div class="xl-wide">
+                    <img src="assets/images/gallery/1.jpg" />
+                </div>
+                <div class="tall">
+                    <img src="assets/images/gallery/event2.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/event3.jpg" />
+                </div>
+                <div class="big">
+                    <img src="assets/images/gallery/5.jpg" />
+                </div>
+                <div class="xl-big">
+                    <img src="assets/images/gallery/6.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/7.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/1.jpg" />
+                </div>
+                <div class="tall">
+                    <img src="assets/images/gallery/1.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/8.jpg" />
+                </div>
+                <div>
+                    <img src="assets/images/gallery/1.jpg" />
+                </div>
+                <div class="tall">
+                    <img src="assets/images/gallery/event7.jpg" />
+                </div>
+                <div class="wide">
+                    <img src="assets/images/gallery/8.jpg" />
                 </div>
             </div>
-            
-            
-            <div class="nav-box row clearfix">
-                <div class="inner col-md-9 clearfix">
-                    <ul class="footer-nav clearfix">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Servies</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-
-                  
-                </div>
-                  <div class="donate-link col-md-3"><a href="donate.html" class="btn btn-primary "><span class="btn-title">Donate Now</span></a></div>
-            </div>
-            
+            <!-- Add more images here -->
         </div>
-        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let modal = document.getElementById("image-modal");
+                let modalImg = document.getElementById("modal-image");
+                let closeModal = document.getElementById("close-modal");
 
-    </footer>
-    <div class="copy">
+                document.querySelectorAll(".gallery-wrapper > div > img").forEach((img) => {
+                    img.addEventListener("click", function () {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                    });
+                });
+
+                closeModal.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            });
+        </script>
+
+        <!-- ######## Gallery End ####### -->
+
+
+        <!--  ************************* Footer Starts Here ************************** -->
+
+        <footer class="footer">
             <div class="container">
-                <a href="https://www.smarteyeapps.com/">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps</a>
-                
-                <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-google-plus-g"></i></a>
-                <a><i class="fab fa-pinterest-p"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook-f"></i></a>
-        </span>
+                <div class="row pb-5">
+                    <div class="col-md-4 col-sm-12">
+                        <h2>Map</h2>
+                        <!-- <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1,%20Ground%20Floor,%20Kailash%20Hills,%20New%20Delhi-110065%20,India+(RPLS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d875.7007915911594!2d77.2935863!3d28.6056812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce498efa1872f%3A0xb3fb408b7d39f514!2s190%2C%20Pocket%205%2C%20Pratap%20Nagar%2C%20Mayur%20Vihar%2C%20Delhi%2C%20110091!5e0!3m2!1sen!2sin!4v1706470995904!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 map-img">
+                        <h2>Contact Us</h2>
+                        <address class="md-margin-bottom-40">
+                            190 <br>
+                            Pratap Nagar, Mayur Vihar Phase-I <br>
+                            Opp. Pocket-IV, New Delhi- 110091<br>
+                            011 23070303, Mobile : 9811107701, 8383010734<br>
+                            Email: <a href="mailto:rplsindia@gmail.com" class="">rplsindia@gmail.com</a><br>
+                        </address>
+
+                        <span>
+                            Follow us on: 
+                            <a><i class="fab fa-facebook-f"></i></a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <h2>Useful Links</h2>
+                        <ul class="list-unstyled link-list">
+                            <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
+                            <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i>
+                            </li>
+                            <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i>
+                            </li>
+                            <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
+                            <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </footer>
+        <div class="copy">
+            <div class="container">
+                <a href="#">2024 &copy; All Rights Reserved | Designed and Developed by
+                    Tripathi Printers</a>
             </div>
 
         </div>
-          
-    
+
+        <!-- Footer End -->
 </body>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
