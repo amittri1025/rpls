@@ -13,6 +13,11 @@ Description: This Template is created for Youtubers
 /* Basic CSS */
 @import 'base/basic_setup';
 
+body {
+    font-family: $font-main, sans-serif;
+}
+
+
 /* Header Style Starts Here */
 header {
     @include shado-1();
