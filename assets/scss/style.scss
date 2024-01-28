@@ -1,18 +1,19 @@
 /* =======================================================================
 Template Name: Youtubers
-Author:  SmartEye Technologies
+Author: SmartEye Technologies
 Author URI: www.smarteyeapps.com
 Version: 1.0
-coder name:Prabin Raja
+coder name: Prabin Raja
 Description: This Template is created for Youtubers
 ======================================================================= */
 
-/* ===================================== Import Variables ================================== */
-@import 'variable';
-/* ===================================== Basic CSS ==================================== */
+/* Import Variables */
+@import '_variable';
+
+/* Basic CSS */
 @import 'base/basic_setup';
 
-/* =================== Header Style Starts Here =================== */
+/* Header Style Starts Here */
 header {
     @include shado-1();
     background-color: #FFF;
@@ -84,11 +85,9 @@ header {
                 margin-left: 5px;
             }
         }
-
     }
 
     .header-bottom {
-
         @media screen and (max-width: 991px) {
             padding: 0px;
         }
@@ -97,7 +96,6 @@ header {
         background-color: #fff;
 
         img {
-
             @media screen and (max-width: 991px) {
                 padding: 5px;
                 margin-top: 0px;
@@ -132,7 +130,7 @@ header {
                     padding: 10px;
 
                     a {
-                       
+                        // Some styles for mobile
                     }
                 }
 
@@ -142,15 +140,13 @@ header {
                     border-radius: 50px;
 
                     &:hover {
-                        background-color: $color-primary;
+                        background-color: $color-primary; // Use the correct color
                         color: #fff !important;
                     }
-
                 }
             }
 
             .nav-btn {
-
                 float: right;
             }
         }
@@ -167,7 +163,6 @@ header {
 }
 
 .navbar {
-
     @media screen and (max-width: 767px) {
         padding: 0px;
     }
@@ -180,8 +175,6 @@ header {
 
     @media screen and (max-width: 767px) {
         top: -50px;
-
-
     }
 }
 
@@ -194,22 +187,17 @@ header {
     padding: 5px !important;
 }
 
-
-/* =================== Slider Style Starts Here =================== */
-
+/* Slider Style Starts Here */
 .slider {
     position: relative;
-
 }
 
 .slider-captions {
     position: absolute;
     bottom: 132px;
     text-align: center;
-}
 
-@media screen and (max-width: 1050px) {
-    .slider-captions {
+    @media screen and (max-width: 1050px) {
         bottom: 100px !important;
     }
 
@@ -221,20 +209,16 @@ header {
     .slider-captions .slider-title {
         font-size: 42px;
     }
-}
 
-@media screen and (max-width: 810px) {
-    .slider-captions {
+    @media screen and (max-width: 810px) {
         bottom: 50px !important;
+
+        .slider-captions .slider-title {
+            font-size: 32px;
+        }
     }
 
-    .slider-captions .slider-title {
-        font-size: 32px;
-    }
-}
-
-@media screen and (max-width: 572px) {
-    .slider-captions {
+    @media screen and (max-width: 572px) {
         display: none;
     }
 }
@@ -340,9 +324,7 @@ header {
     margin: auto;
 }
 
-
-/* ===================================== About CSS ================================== */
-
+/* About CSS */
 .about-us {
     background-color: #edf1f5;
     @include big-padding();
@@ -366,7 +348,6 @@ header {
             text-align: justify;
             font-size: .9rem;
         }
-
     }
 
     .image-part {
@@ -382,7 +363,6 @@ header {
                 p {
                     font-weight: 600;
                     font-size: 1.2rem;
-
                 }
 
                 i {
@@ -407,54 +387,47 @@ header {
     }
 }
 
-
-/* ===================================== Events Home CSS ================================== */
+/* Events Home CSS */
 .events {
     background-color: #efefef2e;
     padding: 50px;
-}
 
-@media screen and (max-width: 940px) {
-    .events {
+    @media screen and (max-width: 940px) {
         padding: 30px 10px;
+    }
+
+    .event-ro .event-box {
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        .raises {
+            margin-bottom: 10px;
+
+            span {
+                color: #71b61b;
+            }
+        }
+
+        .desic {
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
     }
 }
 
-.events .event-ro .event-box {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.events .event-ro .event-box img {
-    margin-bottom: 20px;
-}
-
-.events .event-ro .event-box h4 {
-    font-size: 18px;
-}
-
-.events .event-ro .event-box .raises {
-    margin-bottom: 10px;
-}
-
-.events .event-ro .event-box .raises span {
-    color: #71b61b;
-}
-
-.events .event-ro .event-box .desic {
-    font-size: 13px;
-    margin-bottom: 15px;
-}
-
-/* ===================================== Mission Vision CSS ================================== */
-
+/* Mission Vision CSS */
 .mission-vision {
     background-color: #FFF;
 
-    .mission {
-        @include big-padding();
-    }
-
+    .mission,
     .vision {
         @include big-padding();
     }
@@ -464,94 +437,87 @@ header {
     }
 }
 
-/* ===================================== Charity Number CSS ================================== */
+/* Charity Number CSS */
 .doctor-message {
     background-image: url("../images/slider/slider-2.jpg");
     background-attachment: fixed;
     background-size: cover;
 
-    .session-title h2 {
+    .inner-lay {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 50px;
         color: #FFF;
+
+        @media screen and (max-width: 940px) {
+            padding: 30px 10px;
+        }
+
+        .numb {
+            text-align: center;
+            padding: 30px;
+
+            h3 {
+                font-size: 42px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #CCC;
+                margin-bottom: 20px;
+                color: #FFF;
+            }
+        }
     }
 }
 
-.doctor-message .inner-lay {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 50px;
-    color: #FFF;
-}
-
-@media screen and (max-width: 940px) {
-    .doctor-message .inner-lay {
-        padding: 30px 10px;
-    }
-}
-
-.doctor-message .inner-lay .numb {
-    text-align: center;
-    padding: 30px;
-}
-
-.doctor-message .inner-lay .numb h3 {
-    font-size: 42px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 20px;
-    color: #FFF;
-}
-
-
-/* ===================================== Our Blog CSS ================================== */
+/* Our Blog CSS */
 .our-blog {
     background-color: #FDFDFD;
     padding: 40px;
-}
 
-@media screen and (max-width: 967px) {
-    .our-blog {
+    @media screen and (max-width: 967px) {
         padding: 30px 0px;
     }
-}
 
-.our-blog .single-blog {
-    margin-bottom: 20px;
-    background-color: #FFF;
-    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
-}
+    .single-blog {
+        margin-bottom: 20px;
+        background-color: #FFF;
+        box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
 
-.our-blog .single-blog figure {
-    margin-bottom: 5px;
-}
+        figure {
+            margin-bottom: 5px;
+        }
 
-.our-blog .single-blog .blog-detail {
-    padding: 15px;
-}
+        .blog-detail {
+            padding: 15px;
+        }
 
-.our-blog .single-blog small {
-    color: #71b61b;
-    font-size: 12px;
-}
+        small {
+            color: #71b61b;
+            font-size: 12px;
+        }
 
-.our-blog .single-blog h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
 
-.our-blog .single-blog p {
-    text-align: justify;
-    text-indent: 20px;
-}
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
 
-.our-blog .single-blog .link a {
-    font-size: 12px;
-    color: #71b61b;
-}
+        .link {
+            a {
+                font-size: 12px;
+                color: #71b61b;
+            }
 
-.our-blog .single-blog .link i {
-    padding-top: 6px;
-    margin-left: 5px;
-    color: #FFFFFF;
+            i {
+                padding-top: 6px;
+                margin-left: 5px;
+                color: #FFFFFF;
+            }
+        }
+    }
 }
 
 
