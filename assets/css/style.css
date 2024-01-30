@@ -102,6 +102,30 @@ h1, h2, h3, h4, h5, h6 {
   color: #545454;
 }
 
+h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 993px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 body {
   background-color: rgba(241, 241, 241, 0.2705882353) !important;
   -webkit-font-smoothing: antialiased;
