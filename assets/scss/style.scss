@@ -39,12 +39,12 @@ header {
                 li {
                     float: left;
                     padding: 12px;
-                    color: #686968;
+                    color: $text-color;
                     font-size: .9rem;
 
                     i {
                         margin-right: 5px;
-                        color: #bfbfbf;
+                        color: $text-color;
                     }
 
                     span {
@@ -197,39 +197,9 @@ header {
     position: relative;
 }
 
-.slider-captions {
-    position: absolute;
-    bottom: 132px;
-    text-align: center;
-
-    @media screen and (max-width: 1050px) {
-        bottom: 100px !important;
-    }
-
-    width: 90%;
-    text-align: center;
-    float: none;
-    margin: auto;
-
-    .slider-captions .slider-title {
-        font-size: 42px;
-    }
-
-    @media screen and (max-width: 810px) {
-        bottom: 50px !important;
-
-        .slider-captions .slider-title {
-            font-size: 32px;
-        }
-    }
-
-    @media screen and (max-width: 572px) {
-        display: none;
-    }
-}
 
 .slider-title {
-    font-size: 66px;
+    // font-size: 70px;
     font-weight: 600;
     color: #fff;
     letter-spacing: -3px;
@@ -238,6 +208,34 @@ header {
 .slider-text {
     margin-bottom: 20px;
     color: #fff;
+}
+
+.slider-captions {
+    position: absolute;
+    bottom: 122px;
+    text-align: center;
+    width: 90%;
+    text-align: center;
+    float: none;
+    margin: auto;
+
+    .slider-title {
+        font-size: 70px;
+
+        @media screen and (max-width: 1050px) {
+            font-size: 50px;
+            bottom: 100px !important;
+        }
+
+        @media screen and (max-width: 810px) {
+            font-size: 30px;
+            bottom: 30px !important;
+        }
+
+        @media screen and (max-width: 572px) {
+            display: none;
+        }
+    }
 }
 
 .slider-img {
@@ -332,7 +330,7 @@ header {
 /* About CSS */
 .about-us {
     background-color: #edf1f5;
-    @include big-padding();
+    // @include big-padding();
 
     .natur-row {
         margin-top: 20px;

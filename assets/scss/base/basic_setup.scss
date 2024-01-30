@@ -107,10 +107,8 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    color: #6A6A6A;
+    color: $text-color;
     overflow-x: hidden;
-    
-
 }
 
 .session-title{
@@ -194,7 +192,7 @@ body{
         font-size: 28px;
         width: 100%;
         font-weight: 700;
-        color: #444;
+        color: $text-color;
         @media screen and (max-width: 600px){
             font-size: 26px;
         }
@@ -206,16 +204,16 @@ body{
         font-size: 16px;
         font-size: .93rem;
         font-weight: 600;
-        color: #444;
+        color: $text-color;
         i{
             width: 30px;
             text-align: center;
-            color: #444;
+            color: $text-color;
             
 
         }
         a{
-            color: #444;
+            color: $text-color;
             font-size: .93rem;
             font-weight: 600;
         }

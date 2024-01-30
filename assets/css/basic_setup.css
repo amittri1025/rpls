@@ -121,7 +121,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: #6A6A6A;
+  color: #1d1d1d;
   overflow-x: hidden;
 }
 
@@ -217,7 +217,7 @@ body {
   font-size: 28px;
   width: 100%;
   font-weight: 700;
-  color: #444;
+  color: #1d1d1d;
 }
 @media screen and (max-width: 600px) {
   .page-nav h2 {
@@ -231,15 +231,15 @@ body {
   font-size: 16px;
   font-size: 0.93rem;
   font-weight: 600;
-  color: #444;
+  color: #1d1d1d;
 }
 .page-nav ul li i {
   width: 30px;
   text-align: center;
-  color: #444;
+  color: #1d1d1d;
 }
 .page-nav ul li a {
-  color: #444;
+  color: #1d1d1d;
   font-size: 0.93rem;
   font-weight: 600;
 }
