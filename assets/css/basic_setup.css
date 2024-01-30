@@ -97,17 +97,17 @@ h2 {
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem !important;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.8rem !important;
   }
 }
 @media screen and (min-width: 993px) {

@@ -10,6 +10,8 @@ Description: This Template is created for Youtubers
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
 /* Basic CSS */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
 * {
   margin: 0px;
   padding: 0px;
@@ -107,17 +109,17 @@ h2 {
 }
 @media screen and (max-width: 576px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.8rem !important;
   }
 }
 @media screen and (min-width: 993px) {
@@ -634,18 +636,20 @@ header .small-menu {
 .about-us .natur-row {
   margin-top: 20px;
 }
+.about-us .text-part {
+  margin: 40px 0;
+}
 .about-us .text-part h2 {
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: 20px;
 }
 .about-us .text-part p {
   text-indent: 20px;
-  margin-bottom: 15px;
   line-height: 27px;
   font-weight: 500;
   text-align: justify;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 .about-us .image-part .about-quick-box .about-qcard {
   padding: 50px 30px;
