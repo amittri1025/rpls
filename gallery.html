@@ -14,163 +14,9 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/plugins/splide/splide.min.css">
+    <link rel="stylesheet" href="./assets/plugins/grid-gallery/grid-gallery.css">
 
-    <style>
-        .gallery {
-            height: auto;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .gallery-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-            grid-auto-rows: 250px;
-            grid-auto-flow: dense;
-            width: 90%;
-            max-width: 1200px;
-        }
-
-        @media only screen and (max-width: 1100px) {
-            .gallery-wrapper {
-                grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-                grid-auto-rows: 200px;
-            }
-        }
-
-        @media only screen and (max-width: 900px) {
-            .gallery-wrapper {
-                grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
-                grid-auto-rows: 175;
-            }
-        }
-
-        @media only screen and (max-width: 700px) {
-            .gallery-wrapper {
-                grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
-                grid-auto-rows: 150px;
-            }
-        }
-
-        @media only screen and (max-width: 550px) {
-            .gallery-wrapper {
-                grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-                grid-auto-rows: 150px;
-            }
-
-            .gallery-wrapper .wide {
-                grid-column: span 2 !important;
-            }
-
-            .gallery-wrapper .xl-wide {
-                grid-column: span 2 !important;
-            }
-
-            .gallery-wrapper .tall {
-                grid-row: span 2 !important;
-            }
-
-            .gallery-wrapper .big {
-                grid-column: span 2 !important;
-                grid-row: span 2 !important;
-            }
-
-            .gallery-wrapper .xl-big {
-                grid-column: span 2 !important;
-                grid-row: span 2 !important;
-            }
-        }
-
-        @media only screen and (max-width: 400px) {
-            .gallery-wrapper {
-                grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-                grid-auto-rows: 100px;
-            }
-        }
-
-        .gallery-wrapper>div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 8px;
-            transition: 0.25s all;
-        }
-
-        .gallery-wrapper>div:hover {
-            padding: 4px;
-            transition: 0.25s all;
-            filter: brightness(1.1);
-            cursor: pointer;
-        }
-
-        .gallery-wrapper>div>img {
-            width: 100%;
-            height: 100%;
-            max-width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-
-        .gallery-wrapper .wide {
-            grid-column: span 2;
-        }
-
-        .gallery-wrapper .xl-wide {
-            grid-column: span 3;
-        }
-
-        .gallery-wrapper .tall {
-            grid-row: span 2;
-        }
-
-        .gallery-wrapper .big {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-
-        .gallery-wrapper .xl-big {
-            grid-column: span 3;
-            grid-row: span 2;
-        }
-
-        .image-modal {
-            display: none;
-            position: fixed;
-            z-index: 99999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        .modal-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .modal-content {
-            max-width: 90%;
-            max-height: 90vh;
-            border: 2px solid white;
-            border-radius: 16px;
-            object-fit: contain;
-        }
-
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
@@ -273,151 +119,171 @@
     </div>
 
 
-
-    <!--  ************************* Gallery Starts Here ************************** -->
-    < <div id="image-modal" class="image-modal">
+   
+    <div id="image-modal" class="image-modal">
         <span class="close" id="close-modal">&times;</span>
         <div class="modal-container">
             <img class="modal-content" id="modal-image" />
         </div>
+    </div>
+
+
+    <div class="gallery d-flex  flex-wrap justify-content-center align-items-center vh-100">
+        <div class="yt-container d-flex justify-content-center">
+
+
+
         </div>
 
-        <div class="gallery">
-            <div class="gallery-wrapper">
-                <div class="tall">
-                    <img src="assets/images/gallery/event1.jpg" />
-                </div>
-                <div class="wide">
-                    <img src="assets/images/gallery/2.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/3.jpg" />
-                </div>
-                <div class="xl-wide">
-                    <img src="assets/images/gallery/1.jpg" />
-                </div>
-                <div class="tall">
-                    <img src="assets/images/gallery/event2.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/event3.jpg" />
-                </div>
-                <div class="big">
-                    <img src="assets/images/gallery/5.jpg" />
-                </div>
-                <div class="xl-big">
-                    <img src="assets/images/gallery/6.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/7.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/1.jpg" />
-                </div>
-                <div class="tall">
-                    <img src="assets/images/gallery/1.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/8.jpg" />
-                </div>
-                <div>
-                    <img src="assets/images/gallery/1.jpg" />
-                </div>
-                <div class="tall">
-                    <img src="assets/images/gallery/event7.jpg" />
-                </div>
-                <div class="wide">
-                    <img src="assets/images/gallery/8.jpg" />
-                </div>
+        <div class="gallery-wrapper">
+            <div class="tall">
+                <img src="assets/images/gallery/event1.jpg" />
             </div>
-            <!-- Add more images here -->
+            <div class="wide">
+                <img src="assets/images/gallery/2.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/3.jpg" />
+            </div>
+            <div class="xl-wide">
+                <img src="assets/images/gallery/1.jpg" />
+            </div>
+            <div class="tall">
+                <img src="assets/images/gallery/event2.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/event3.jpg" />
+            </div>
+            <div class="big">
+                <img src="assets/images/gallery/5.jpg" />
+            </div>
+            <div class="xl-big">
+                <img src="assets/images/gallery/6.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/7.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/1.jpg" />
+            </div>
+            <div class="tall">
+                <img src="assets/images/gallery/1.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/8.jpg" />
+            </div>
+            <div>
+                <img src="assets/images/gallery/1.jpg" />
+            </div>
+            <div class="tall">
+                <img src="assets/images/gallery/event7.jpg" />
+            </div>
+            <div class="wide">
+                <img src="assets/images/gallery/8.jpg" />
+            </div>
+            <div class="wide">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/muP1zCfLP7Y?si=EqLu8MiE-tFISXHw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            
+            <div class="wide">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0PM0SbeAs3Y?si=D1l7AXOzYDhawCiH"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
         </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                let modal = document.getElementById("image-modal");
-                let modalImg = document.getElementById("modal-image");
-                let closeModal = document.getElementById("close-modal");
+        <!-- Add more images here -->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let modal = document.getElementById("image-modal");
+            let modalImg = document.getElementById("modal-image");
+            let closeModal = document.getElementById("close-modal");
 
-                document.querySelectorAll(".gallery-wrapper > div > img").forEach((img) => {
-                    img.addEventListener("click", function () {
-                        modal.style.display = "block";
-                        modalImg.src = this.src;
-                    });
-                });
-
-                closeModal.addEventListener("click", function () {
-                    modal.style.display = "none";
+            document.querySelectorAll(".gallery-wrapper > div > img").forEach((img) => {
+                img.addEventListener("click", function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
                 });
             });
-        </script>
 
-        <!-- ######## Gallery End ####### -->
+            closeModal.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+        });
+    </script>
+
+    <!-- ######## Gallery End ####### -->
 
 
-        <!--  ************************* Footer Starts Here ************************** -->
+    <!--  ************************* Footer Starts Here ************************** -->
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row pb-5">
-                    <div class="col-md-4 col-sm-12">
-                        <h2>Map</h2>
-                        <!-- <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no"
+    <footer class="footer">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-4 col-sm-12">
+                    <h2>Map</h2>
+                    <!-- <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no"
                                 marginheight="0" marginwidth="0"
                                 src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1,%20Ground%20Floor,%20Kailash%20Hills,%20New%20Delhi-110065%20,India+(RPLS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div> -->
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d875.7007915911594!2d77.2935863!3d28.6056812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce498efa1872f%3A0xb3fb408b7d39f514!2s190%2C%20Pocket%205%2C%20Pratap%20Nagar%2C%20Mayur%20Vihar%2C%20Delhi%2C%20110091!5e0!3m2!1sen!2sin!4v1706470995904!5m2!1sen!2sin"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d875.7007915911594!2d77.2935863!3d28.6056812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce498efa1872f%3A0xb3fb408b7d39f514!2s190%2C%20Pocket%205%2C%20Pratap%20Nagar%2C%20Mayur%20Vihar%2C%20Delhi%2C%20110091!5e0!3m2!1sen!2sin!4v1706470995904!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-                    <div class="col-md-4 col-sm-12 map-img">
-                        <h2>Contact Us</h2>
-                        <address class="md-margin-bottom-40">
-                            190 <br>
-                            Pratap Nagar, Mayur Vihar Phase-I <br>
-                            Opp. Pocket-IV, New Delhi- 110091<br>
-                            011 23070303, Mobile : 9811107701, 8383010734<br>
-                            Email: <a href="mailto:rplsindia@gmail.com" class="">rplsindia@gmail.com</a><br>
-                        </address>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                        190 <br>
+                        Pratap Nagar, Mayur Vihar Phase-I <br>
+                        Opp. Pocket-IV, New Delhi- 110091<br>
+                        011 23070303, Mobile : 9811107701, 8383010734<br>
+                        Email: <a href="mailto:rplsindia@gmail.com" class="">rplsindia@gmail.com</a><br>
+                    </address>
 
-                        <span>
-                            Follow us on: 
-                            <a href="https://www.facebook.com/p/Res-Publican-Law-Society-100064026733840/?paipv=0&eav=AfY7ItvKzG_nxlYtpj2xttonnUan3Kx_dOepE1JOFB_NyeNwxW39BV5Az9kSrM3zqdU&_rdr">
-                                <img src="./assets/images/icons/icons8-facebook-48.png" alt="">
-                            </a>
-                        </span>
-                    </div>
+                    <span>
+                        Follow us on:
+                        <a
+                            href="https://www.facebook.com/p/Res-Publican-Law-Society-100064026733840/?paipv=0&eav=AfY7ItvKzG_nxlYtpj2xttonnUan3Kx_dOepE1JOFB_NyeNwxW39BV5Az9kSrM3zqdU&_rdr">
+                            <img src="./assets/images/icons/icons8-facebook-48.png" alt="">
+                        </a>
+                    </span>
+                </div>
 
-                    <div class="col-md-4 col-sm-12">
-                        <h2>Useful Links</h2>
-                        <ul class="list-unstyled link-list">
-                            <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i>
-                            </li>
-                            <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i>
-                            </li>
-                            <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                            <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i>
-                            </li>
-                        </ul>
-                    </div>
-
+                <div class="col-md-4 col-sm-12">
+                    <h2>Useful Links</h2>
+                    <ul class="list-unstyled link-list">
+                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i>
+                        </li>
+                        <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
 
-
-        </footer>
-        <div class="copy">
-            <div class="container">
-                <a href="#">2024 &copy; All Rights Reserved | Designed and Developed by
-                    Tripathi Printers</a>
-            </div>
-
         </div>
 
-        <!-- Footer End -->
+
+    </footer>
+    <div class="copy">
+        <div class="container">
+            <a href="#">2024 &copy; All Rights Reserved | Designed and Developed by
+                Tripathi Printers</a>
+        </div>
+
+    </div>
+
+    <!-- Footer End -->
 </body>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
